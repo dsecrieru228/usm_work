@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="light.css">
+<script src="toolbar.js"></script>
+<title>Расписание уроков</title>
+</head>
+<body>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
+<div w3-include-html="toolbar.html"></div>
+<script>includeHTML();</script>
+<table id="tbl_timetable"  align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
+	<tr align="center" >
+		<td colspan="7" bgcolor="black" style="color:white"><b><br>Расписание уроков<br></b><br></td>
+	</tr>	
+	<tr align="center">
+		<td width="4%"></td>
+		<td width="16%"><b>ПН</b></td>
+		<td width="16%"><b>ВТ</b></td>
+		<td width="16%"><b>СР</b></td>
+		<td width="16%"><b>ЧТ</b></td>
+		<td width="16%"><b>ПТ</b></td>
+		<td width="16%"><b>СБ</b></td>
+	</tr>	
+	<tr id="dow1">
+		<td><strong>1</strong></td>
+		<td>Русский Язык</td>
+		<td>Математика</td>
+		<td>English</td>
+		<td>Физкультура</td>
+		<td></td>
+		<td></td>		
+	</tr>	
+</table>
+<!--<audio id="soundbell"><source src="bell.mp3" type="audio/mpeg"></audio>-->
+<span id="demo"></span>
+</body></html>
+<script>
+//*****************************
+window.onload = function() {
+//*****************************
+toolbar_onload();
+}  
+</script>

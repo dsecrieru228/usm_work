@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Class>
+	<Day id="1">
+		<Lesson id="1">Русский язык</Lesson>
+		<Lesson id="2">Литература</Lesson>
+		<Lesson id="3">Биология</Lesson>
+		<Lesson id="4">География</Lesson>
+		<Lesson id="5">Физика</Lesson>
+		<Lesson id="6">Алгебра</Lesson>
+	</Day>
+	<Day id="2">
+		<Lesson id="1">English</Lesson>			
+		<Lesson id="2">Химия</Lesson>
+		<Lesson id="3">Русский язык</Lesson>
+		<Lesson id="4">Физика</Lesson>				
+		<Lesson id="5">Алгебра</Lesson>
+		<Lesson id="6">География</Lesson>
+		
+	</Day>
+	<Day id="3">
+		<Lesson id="1">Биология</Lesson>
+		<Lesson id="2">Алгебра</Lesson>
+		<Lesson id="3">Родной язык</Lesson>
+		<Lesson id="4">История</Lesson>
+		<Lesson id="5">Физкультура</Lesson>
+		<Lesson id="6">География</Lesson>
+		
+	</Day>	
+	<Day id="4">		
+		<Lesson id="1">История</Lesson>
+		<Lesson id="2">Физика</Lesson>
+		<Lesson id="3">Физкультура</Lesson>
+		<Lesson id="4">Общество</Lesson>
+		<Lesson id="5">Геометрия</Lesson>	
+		<Lesson id="6">Химия</Lesson>	
+		<Lesson id="7">中文语言</Lesson>	
+	</Day>	
+	<Day id="5">
+		<Lesson id="1">Русский язык</Lesson>
+		<Lesson id="2">Геометрия</Lesson>
+		<Lesson id="3">Алгебра</Lesson>
+		<Lesson id="4">Литература</Lesson>
+		<Lesson id="5">Информатика</Lesson>
+		<Lesson id="6">English</Lesson>
+	</Day>	
+	<Day id="6">
+		<Lesson id="1">English</Lesson>
+		<Lesson id="2">Информатика</Lesson>		
+		<Lesson id="3">Физкультура</Lesson>
+		<Lesson id="4">Биология</Lesson>
+		<Lesson id="5">История</Lesson>
+		<Lesson id="6">Литература</Lesson>
+	</Day>	
+	
+</Class>

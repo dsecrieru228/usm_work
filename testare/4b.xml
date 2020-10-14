@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Class>
+	<Day id="1">
+		<Lesson id="1">Математика</Lesson>			
+		<Lesson id="2">Русский язык</Lesson>
+		<Lesson id="3">English</Lesson>		
+		<Lesson id="4">Физкультура</Lesson>		
+		<Lesson id="5">Чтение</Lesson>		
+		<Lesson id="6">English</Lesson>		
+	</Day>
+	<Day id="2">
+		<Lesson id="1">Математика</Lesson>			
+		<Lesson id="2">Русский язык</Lesson>
+		<Lesson id="3">Окружающий мир</Lesson>
+		<Lesson id="4">ИЗО/Технология</Lesson>
+		<Lesson id="5">ИЗО/Технология</Lesson>		
+	</Day>
+	<Day id="3">
+		<Lesson id="1">Математика</Lesson>		
+		<Lesson id="2">Русский язык</Lesson>		
+		<Lesson id="3">Чтение</Lesson>		
+		<Lesson id="4">ОПК</Lesson>		
+		<Lesson id="5">Информатика</Lesson>		
+		<Lesson id="6">Физкультура</Lesson>				
+	</Day>	
+	<Day id="4">		
+		<Lesson id="1">Физкультура</Lesson>		
+		<Lesson id="2">Музыка</Lesson>		
+		<Lesson id="3">Математика</Lesson>		
+		<Lesson id="4">English</Lesson>		
+		<Lesson id="5">Русский язык</Lesson>				
+	</Day>	
+	<Day id="5">
+		<Lesson id="1">Математика</Lesson>		
+		<Lesson id="2">English</Lesson>		
+		<Lesson id="3">Родной язык</Lesson>		
+		<Lesson id="4">Чтение</Lesson>		
+		<Lesson id="5">Окружающий мир</Lesson>				
+	</Day>	
+</Class>

@@ -1,0 +1,12 @@
+{
+  "short_name": "Timetable",
+  "name": "School Timetable",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
+  ],
+  "display": "standalone",
+ }

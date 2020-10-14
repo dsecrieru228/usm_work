@@ -1,0 +1,21 @@
+
+<table id="toolbar" align="center" class="tbl_Calendar" width="300px">
+	<tr bgcolor="silver" border="hidden">
+	<td colspan="4">
+		<button class="bell_on" id="btn_sound"  onclick="btn_sound_onclick()"
+		style="vertical-align: bottom; cursor: pointer; width: 32px; height: 32px; border-radius: 4px;background-size: 32px 32px; background-position: center;"></button>		
+	<button class="typeTimetable" id="typeTimetable"  onclick="btn_typeTimetable_show()"
+		style="vertical-align: bottom; cursor: pointer; width: 32px; height: 32px; border-radius: 4px;background-size: 32px 32px; background-position: center;"></button>
+
+  <div class="dropdown-content" id="dropdown-content_typeTimetable" onclick="btn_typeTimetable_select()">
+    <a href="schtt.html"><img src="RingTimetable.png"> Расписание звонков</a>
+    <a href="WeekTimetable.html"><img src="weekTimetable.png"> Расписание на неделю</a>
+  </div>
+	<!-- <div class="dropdown"><!-- https://www.w3schools.com/css/css_dropdowns.asp-->
+	<!-- class="dropbtn"    -->
+	<button  id="btn_class" onclick="btn_class_show()"                                
+		style="float: right; vertical-align: bottom; cursor: pointer; width: 32px; height: 32px; border-radius: 4px;background-size: 32px 32px; background-position: center;"></button>		
+	 <div class="dropdown-content" id="classes" onclick="btn_class_select()"></div>
+	</td></tr>	
+
+</table>

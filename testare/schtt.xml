@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Timetable>
+	<bell>	
+		<Lesson lesson="1" STARTTIME="8:30" ENDTIME="9:10"></Lesson>
+		<Lesson lesson="2" STARTTIME="9:20" ENDTIME="10:00"></Lesson>
+		<Lesson lesson="3" STARTTIME="10:15" ENDTIME="10:55"></Lesson>
+		<Lesson lesson="4" STARTTIME="11:10" ENDTIME="11:50"></Lesson>
+		<Lesson lesson="5" STARTTIME="12:00" ENDTIME="12:40"></Lesson>
+		<Lesson lesson="6" STARTTIME="12:50" ENDTIME="13:30"></Lesson>
+		<Lesson lesson="7" STARTTIME="13:40" ENDTIME="14:20"></Lesson>
+		<Lesson lesson="08" STARTTIME="14:30" ENDTIME="15:10"></Lesson>
+		<Lesson lesson="09" STARTTIME="15:25" ENDTIME="16:05"></Lesson>		
+		<Lesson lesson="10" STARTTIME="16:20" ENDTIME="17:00"></Lesson>				
+	</bell>
+		<Classes>
+		<class id="4b">4Б</class>
+		<class id="9a">9А</class>		
+	</Classes>
+</Timetable>
