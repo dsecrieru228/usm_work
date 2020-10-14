@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<p><input type="number" ng-model="nr" ng-change="rezolva()"></p>
+<p>{{nr}} la patrat este: {{ras}}</p>
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.service('patrat', function() {
+    this.patrat = function (x) {
+        return x*x;
+    }
+});
+app.controller('myCtrl', function($scope, patrat) {
+	$scope.rezolva = function(){
+          $scope.ras = patrat.patrat($scope.nr);
+      }
+  
+});
+</script>
+</body>
+</html>

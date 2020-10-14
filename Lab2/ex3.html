@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<p>Alege un student:</p>
+<select ng-model="selectedStudent">
+<option ng-repeat="x in students" value="{{x.nume}} {{x.prenume}}, {{x.nota}}">{{x.nume}} {{x.prenume}}</option>
+</select>
+<h1>Ai selectat studentul: {{selectedStudent}}</h1>
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.students = [
+    	{nume: "Ion", prenume: "Ungureanu", nota: 9},
+    	{nume: "Cristi", prenume: "Ursu", nota: 8},
+    	{nume: "Sergiu", prenume: "Cazacu", nota: 5},
+    ];
+});
+</script>
+</body>
+</html>

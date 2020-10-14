@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="formCtrl">
+ <form>
+ <h2 style="text-align:center;"> Formularul angajării </h2>
+ <p> Nume : </p> <input type="text" ng-model="angajat.nume">
+ <p> Prenume : </p> <input type="text" ng-model="angajat.prenume">
+ <p> Data nașterii : </p> <input type="date" ng-model="angajat.data">
+ <br/>
+ <br/>
+ Facultatea:
+ <br/>
+ <input type="radio" value="Chimie" ng-model="angajat.facultate"> Chimie <br/>
+ <input type="radio" value="Informatica" ng-model="angajat.facultate"> Informatica     <br/>
+ <input type="radio" value="Matematica" ng-model="angajat.facultate"> Matematica <br/>
+ <input type="radio" value="Biologia" ng-model="angajat.facultate"> Biologie <br/>
+ <br/>
+ Obiectul predării : 
+ <select ng-model="angajat.obiect">
+   <option value="">--Selectează--
+    <option value="Chimie Organica"> Chimie organică
+    <option value="Matematica Economica"> Matematica Economica
+    <option value="Grafica pe calculator"> Grafica pe calculator
+    <option value="Biologie"> Biologie
+  </select>
+ <br/>
+ Salariu dorit : 
+ <input type="number" ng-model="angajat.salariu"> MDL <br/>
+ <p ng-show="angajat.salariu > 0 && angajat.salariu < 3000"> Vă subestimați !!! </p>
+ <p ng-show="angajat.salariu > 0 && angajat.salariu > 5000"> EXAGERAT !!! </p>
+ <button ng-disabled = "(angajat.salariu < 3000 || angajat.salariu > 5000 || !angajat.salariu) || (!angajat.nume || !angajat.prenume || !angajat.data || !angajat.facultate || !angajat.obiect)" ng-click="confirma()">CONFIRMA</button>
+ <button ng-click="anuleaza()">ANULEAZA</button>
+</form>
+<div ng-show = "afis">
+<h2 style="text-align:left;"> Informatia din formular</h2>
+<p> Nume : {{angajat.nume}}</p>
+<p> Prenume : {{angajat.prenume}}</p>
+<p> Data nașterii : {{angajat.data | date : "longDate"}}</p>
+<p> Facultatea : {{angajat.facultate}}</p>
+<p> Obiectul Predarii : {{angajat.obiect}}</p>
+<p> Salariul Dorit : {{angajat.salariu}}</p>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('formCtrl', function($scope) {
+$scope.afis = false;
+$scope.salariu ='';
+    $scope.confirma = function () {
+        $scope.afis  = true;
+    };
+    $scope.anuleaza = function () {
+    	$scope.angajat.nume = ""
+        $scope.angajat.prenume = ""
+        $scope.angajat.data = ""
+        $scope.angajat.facultate = ""
+        $scope.angajat.obiect = ""
+        $scope.angajat.salariu = ""
+        $scope.afis = false;
+    };   
+});
+</script>
+</div>
